@@ -48,7 +48,7 @@ nav ul{
     border: 1px solid yellow;
     margin-right: 5%;
 }
-
+/* https://www.w3schools.com/css/css3_flexbox.asp one box will follow the other */
 li{
     all: unset;
     width: 15%;
