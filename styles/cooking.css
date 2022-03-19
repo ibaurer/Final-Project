@@ -4,46 +4,6 @@
     background-color: aqua;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    height: 100px;
-}
-
-nav{
-    display: flex;
-    flex-direction: row-reverse;
-    width: 75%;
-    height: 100%;
-    border: 1px solid red;
-}
-
-#logo {
-height: 100%;
-}
-nav ul{
-   display:flex;
-   align-items: center;
-    width: 30%; 
-    height: 100%;
-    border: 1px solid yellow;
-    margin-right: 10%;
-}
-
-nav ul li{
-    all: unset;
-    width: 33.3%;
-    height: 30px;
-    border: 1px solid black;
-}
-
-#exampleImage{
-
-    width: 20%;
-    height: 100%;
-    background: coral;
-
-}
 /* 
 ol {
     list-style-type: none;
@@ -64,4 +24,103 @@ li:before {
 img{
     width: 50%;
     height: auto;
+}
+.top {
+    text-align: center;
+    font-size: 400%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    /* background-color: aqua; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body { background-color: aqua;}
+
+
+
+table{
+    table-layout: fixed;
+    width: 100%;
+}
+
+table,th,td{
+    border: 1px solid black;
+}
+
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    background-color: grey;
+}
+
+nav{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80%;
+    height: 100%;
+}
+
+#logo {
+height: 100%;
+}
+nav ul{
+    
+   display:flex;
+   justify-content: center;
+   align-items: center;
+    width: 100%; 
+    height: 100%;
+    margin-right: 5%;
+}
+/* https://www.w3schools.com/css/css3_flexbox.asp one box will follow the other */
+li{
+    all: unset;
+    width: 15%;
+    height: 100%;
+    /* background: white; */
+}
+
+li:hover a{
+    color: black;
+    background: aqua;
+}
+
+li a{
+    all: unset;
+    /* line-height: 1.8; */
+    font-size: 24px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    color: white;
+}
+
+#exampleImage{
+
+    width: 20%;
+    height: 100%;
+    /* background: coral; */
+
+}
+
+.tableImage{
+    display: block;
+    width:50%;
+    height: auto;
+    margin: 0 auto;
+}
+
+caption {
+    font-size: 5ch;
+}
+.top {
+    text-align: center;
+    font-size: 400%;
 }

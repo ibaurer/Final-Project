@@ -32,7 +32,6 @@ nav{
     flex-direction: row-reverse;
     width: 80%;
     height: 100%;
-    border: 1px solid red;
 }
 
 #logo {
@@ -45,7 +44,6 @@ nav ul{
    align-items: center;
     width: 100%; 
     height: 100%;
-    border: 1px solid yellow;
     margin-right: 5%;
 }
 /* https://www.w3schools.com/css/css3_flexbox.asp one box will follow the other */
@@ -79,4 +77,10 @@ li a{
     height: 100%;
     /* background: coral; */
 
+}
+}
+
+.top {
+    text-align: center;
+    font-size: 400%;
 }
