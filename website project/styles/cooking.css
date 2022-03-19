@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+nav{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 75%;
+    height: 100%;
+    border: 1px solid red;
+}
+
+#logo {
+height: 100%;
+}
+nav ul{
+   display:flex;
+   align-items: center;
+    width: 30%; 
+    height: 100%;
+    border: 1px solid yellow;
+    margin-right: 10%;
+}
+
+nav ul li{
+    all: unset;
+    width: 33.3%;
+    height: 30px;
+    border: 1px solid black;
+}
+
+#exampleImage{
+
+    width: 20%;
+    height: 100%;
+    background: coral;
+
+}
+/* 
+ol {
+    list-style-type: none;
+    counter-reset: elementcounter;
+    padding-left: 0;
+}
+
+li:before {
+   content: "Step " counter(elementcounter) ". ";
+   counter-increment: elementcounter;
+   font-weight: bold; 
+} */
+
+#recipeContainer{
+    margin-left: 100px;
+}
+
+img{
+    width: 50%;
+    height: auto;
+}
