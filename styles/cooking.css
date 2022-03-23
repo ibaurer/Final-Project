@@ -56,19 +56,19 @@ nav ul{
     margin-right: 5%;
 }
 /* https://www.w3schools.com/css/css3_flexbox.asp one box will follow the other */
-li{
+ul li{
     all: unset;
     width: 15%;
     height: 100%;
     /* background: white; */
 }
 
-li:hover a{
+ul li:hover a{
     color: black;
     background: aqua;
 }
 
-li a{
+ul li a{
     all: unset;
     /* line-height: 1.8; */
     font-size: 24px;
@@ -101,4 +101,9 @@ caption {
 .top {
     text-align: center;
     font-size: 400%;
+}
+
+ol li{
+    all: unset;
+    display: block;
 }
