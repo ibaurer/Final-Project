@@ -36,6 +36,7 @@ nav{
 
 #logo {
 height: 100%;
+width: auto;
 }
 nav ul{
     
@@ -78,7 +79,7 @@ li a{
     /* background: coral; */
 
 }
-}
+
 
 .top {
     text-align: center;
