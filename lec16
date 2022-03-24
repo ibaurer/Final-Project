@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture 16 demo</title>
+</head>
+
+<body>
+    <form action="">
+        <p>x = <input type="text" id="x" /></p>
+        <p>y = <input type="text" id="y" /></p>
+        <!-- <p>result = <span id="result">?</span></p> -->
+        <p>result = <input type="text" id="result" disabled readonly /></p>
+        <button type="button">Calculate</button>
+    </form>
+    <script>
+        // when user clicks the button, show the sum of x and y
+        function calc() {
+            console.log("...starting calc function...");
+            const a = document.getElementById("num1").value;
+            console.log(a);
+
+            const b = document.getElementById("num2").value;
+            console.log(b);
+
+let result =add(parseInt(a), parseInt(b)); console.log("...done!");
+
+
+            const r = parseInt(x) + parseInt(y);
+            // console.log(result);
+            const r = document.getElementById("result");
+            rvalue= result 
+            
+            // prompt user to enter result, if the result is correct, show the result, otherwise, show a humiliating message
+            // const userResult = window.prompt("What is the result?");
+            // if (result === parseInt(userResult)) {
+            //   resultEl.innerText = parseInt(x) + parseInt(y);
+            // } else {
+            //   resultEl.innerText = "You better learn math!";
+            // }
+        }
+
+        // To trigger the function, all we need to do is find the element, and event, and connect to the function.
+        document.querySelector("button").onclick = function () {
+            calc();
+        };
+    </script>
+</body>
+
+</html>
