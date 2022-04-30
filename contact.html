@@ -70,7 +70,7 @@
 
 </html>
 
-<form action="#">
+<form action="#" id="contact-form">
 <fieldset>
     <legend>Your Information</legend>
 
@@ -100,6 +100,7 @@
     </div>
     <div>
         <select name="topic" id="topic">
+            <option value="">---Select one---</option>
             <option value="Real Estate"> Real Estate</option>
             <option value="Cooking"> Cooking </option>
             <option value="Personal Finance">Personal Finance</option>
@@ -109,17 +110,20 @@
 
     <div>
         Do you have experience with this topic?
+        
         <input type="radio" placeholder="None" name="info">
         <label for="None"> None</label>
-        <input type="radio" placeholder="Some" name="info>
-                <label for=" Some"> Some</label>
+        
+        <input type="radio" placeholder="Some" name="info">
+        <label for=" Some"> Some</label>        
+
         <input type="radio" placeholder="A lot" name="info">
         <label for="A lot">A lot</label>
     </div>
     <div>
 
-        <input type="checkbox" id="Sign me up for email updates:">
-        <label for="Sign me up for email updates:"> Sign me up for email updates:</label>
+        <input type="checkbox" name="signup-checkbox">
+        <label for="signup-checkbox"> Sign me up for email updates:</label>
     </div>
     <button type="submit">
 
@@ -127,3 +131,54 @@
     </button>
     </form>
 
+    <script>
+        document.getElementById('contact-form').onsubmit = function(e) {
+            
+            const name = document.getElementsByName('lname')[0].value;
+            const email = document.getElementsByName('Email')[0].value;
+            const feedback = document.getElementsByName('Feedback')[0].value;
+            
+            const topic = document.getElementsByName('topic')[0].value;
+            const info = document.getElementsByName('info')[0].value;
+
+            const signup_checkbox = document.getElementsByName('signup-checkbox')[0].value;
+
+            if(name == '') {
+                alert('Please enter your name');
+                return false;
+            }
+            else if(email == '') {
+                alert('Please enter your email address');
+                return false;
+            }
+            else if(email != '' && !ValidateEmail(email)) {
+                alert("You have entered an invalid email address!");
+                return false;
+            }
+            else if(feedback == '') {
+                alert('Please enter your feedback');
+                return false;
+            }
+            else if(topic == '') {
+                alert('Please select a topic');
+                return false;
+            }
+            else if(document.querySelector('input[name="info"]:checked') == null) {
+                alert("You need to choose an option!");
+                return false;
+            }
+            
+            return true;
+            
+        };
+
+
+        function ValidateEmail(mail) {
+            if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
+                return true;
+            }
+            
+            return false;
+        }
+        //https://www.w3resource.com/javascript/form/email-validation.php
+    </script>

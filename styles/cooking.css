@@ -1,112 +1,160 @@
-* {
-    margin: 0;
-    padding: 0;
-    /* background-color: aqua; */
-    font-family: Arial, Helvetica, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking</title>
+
+    <link rel="stylesheet" href="styles/cooking.css">
+    <!-- <link rel="stylesheet" href="styles/realEstate.css"> -->
+    <link rel="stylesheet" href="styles/continuousProjectstyle.css">
+    <meta name="description" content="Izzy Baurer website">
+
+    <meta name="keywords" content="RealEstate, Izzy, Cooking, Finance">
+
+    <meta name="author" content="Izzy Baurer">
 
 
-/* 
-ol {
-    list-style-type: none;
-    counter-reset: elementcounter;
-    padding-left: 0;
-}
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="favicon-16x16.png">
 
-li:before {
-   content: "Step " counter(elementcounter) ". ";
-   counter-increment: elementcounter;
-   font-weight: bold; 
-} */
+    <link rel="manifest" href="site.webmanifest">
+</head>
 
-#recipeContainer{
-    margin-left: 100px;
-}
-
-.bodyImg{
-    width: 50%;
-    height: auto;
-}
-.bodyImg.active {
-    border: 2px solid black;
-}
-.top {
-    text-align: center;
-    font-size: 400%;
-}
-
-body { background-color: aqua;}
+<body>
+    <header>
+        <div id='exampleImage'>
+            <img id="logo" src="images/IBpic.webp" alt="Initials">
+        </div>
+        <nav>
+            <ul>
 
 
+                <li>
+                    <a href='realestate.html'>Real Estate</a>
+                </li>
 
 
+                <li>
+                    <a href='index.html'>Home</a>
+                </li>
 
-nav{
-    display: flex;
-    flex-direction: row-reverse;
-    width: 80%;
-    height: 100%;
-}
+                <li>
+                    <a href='cooking.html'>Cooking</a>
+                </li>
+
+                <li>
+                    <a href='sitemap.html'>Sitemap</a>
+                </li>
+
+                <li>
+                    <a href='contact.html'>Contact</a>
+                </li>
+
+                <li>
+                    <a href='finance.html'>Finance</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <p class="top"> Cooking</p>
+    <div>
+        <h2>My Favorite Deviled Eggs</h2>
+        <img class='bodyImg' src="images/eggs2.jpg" alt="eggs">
+
+        <p>
+            Ingredients: 12 Hard Boiled Eggs, 1 cup Mayo, 1/4 cup mustard, 1 teaspoon cayenne
+        </p>
 
 
-nav ul{
-    
-   display:flex;
-   justify-content: center;
-   align-items: center;
-    width: 100%; 
-    height: 100%;
-    margin-right: 5%;
-}
-/* https://www.w3schools.com/css/css3_flexbox.asp one box will follow the other */
-ul li{
-    all: unset;
-    width: 15%;
-    height: 100%;
-    /* background: white; */
-}
+    </div>
 
-ul li:hover a{
-    color: black;
-    background: aqua;
-}
+    <div id='recipeContainer'>
+        <ol>
+            <li>
+                Step 1: If you haven't boiled your eggs yet, please do so now
 
-ul li a{
-    all: unset;
-    /* line-height: 1.8; */
-    font-size: 24px;
-    text-align: center;
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    color: white;
-}
+            </li>
+            <li>
+                Step 2: Cool and Peel the eggs
+            </li>
+            <li>
+                Step 3: Cut the eggs lengthwise, and scoop out the yolk into a bowl
+            </li>
+            <li>
+                Step 4: Mash up egg yolks
+            </li>
+            <li>
+                Step 5: combine mayo, mustard, and cayenne into the egg yolks
+            </li>
+            <li>
+                Step 6: Spoon yolk mixture evenly into the empty egg whites
+            </li>
+            <li>
+                Step 7: Serve and Enjoy!
+            </li>
+        </ol>
+    </div>
+    <div>
 
-#exampleImage{
+    </div>
+    <!-- how to make the steps individual lines -->
+    <br>
+    <br>
 
-    width: 20%;
-    height: 100%;
-    /* background: coral; */
+    <br>
+    <br>
 
-}
+    <div>
+        <h2>Best Ever Pie Dough</h2>
+        <img class='bodyImg' src="images/piedough.jpg" alt="Pie Dough">
+    </div>
+    Ingredients: Ice water, 1.5 cups flour, 1 stick butter
 
-.tableImage{
-    display: block;
-    width:50%;
-    height: auto;
-    margin: 0 auto;
-}
+    This simple but incredible recipe is adapted from Erin Jean McDowell
 
-caption {
-    font-size: 5ch;
-}
-.top {
-    text-align: center;
-    font-size: 400%;
-}
+    <div id='recipeContainer'>
+        <ol>
+            <li>
+                Step 1: Make sure the ice water is chilling
+            </li>
+            <li>
+                Step 2: Cut the butter into 1/4in chunks
+            </li>
+            <li>
+                Step 3: Toss flour and butter together
+            </li>
+            <li>
+                Step 4: Use a butter knife or your hands to cut the butter into the flour in pea sized pieces
+            </li>
+            <li>
+                Step 5: Add ice water until dough comes together
+            </li>
+            <li>
+                Step 6: Wrap dough in plastic wrap and chill in the fridge 30 minutes
+            </li>
+            <li>
+                Step 7: Use according to your favorite pie recipe!
+            </li>
+        </ol>
+    </div>
 
-ol li{
-    all: unset;
-    display: block;
-}
+    <script>
+        document.querySelectorAll('.bodyImg').forEach(function (image) {
+            image.addEventListener('mouseenter', function() {
+                this.classList.add('active');
+            });
+            image.addEventListener('mouseleave', function() {
+                this.classList.remove('active');
+            });
+        });
+
+    </script>
+</body>
+
+</html>

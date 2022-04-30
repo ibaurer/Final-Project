@@ -44,10 +44,6 @@
             </div>
             <nav>
                 <ul>
-
-
-
-
                     <li>
                         <a href='index.html'>Home</a>
                     </li>
@@ -82,6 +78,14 @@
     Izzy Baurer is a college student, real estate investor, and person! She is excited to share on this site some things that are important to her, like: finance, cooking, and real estate! 
 </p>
 
+<div class="section">
+    <span class="update-text">Click on to see a fun fact about Izzy</span>
+</div>
+
+<div class="section">
+    <div class="style-element">Izzy recently completed a Web Tech class and learned how to change elements like this!</div>
+</div>
+
 <script>
 
 function logoFunction() {
@@ -105,6 +109,26 @@ document.getElementById("logo").onclick = function () {
     image.style.height = "300px";
 
   }
+
+
+document.querySelector('.update-text').addEventListener('click', function(e) {
+    this.innerHTML = 'Izzy was born 2 months early!';
+});
+
+// update with new texts
+document.querySelector('.style-element').addEventListener('mouseenter', function() {
+    this.classList.add('active');
+});
+document.querySelector('.style-element').addEventListener('mouseleave', function() {
+    this.classList.remove('active');
+});
+
+
+document.querySelector('#izzy').addEventListener('click', function(e) {
+    const img = e.target;
+    img.style.width = '400px';
+    img.style.transition = 'all 0.25s ease';
+});
 
 
 </script>

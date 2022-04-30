@@ -201,6 +201,17 @@
                         <a href="https://www.youtube.com/c/AmericasTestKitchen">
                             Click here for their youtube </a>
                     </td>
+    <script>
+        document.querySelectorAll('.bodyImg').forEach(function(image) {
+            image.addEventListener('mouseenter', function() {
+                this.classList.add('active');
+            });
+            image.addEventListener('mouseleave', function() {
+                this.classList.remove('active');
+            });
+        });
+
+    </script>
 </body>
 
 </html>

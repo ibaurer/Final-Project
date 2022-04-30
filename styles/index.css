@@ -11,3 +11,23 @@ p {
     font-weight: 300;
     font-size: large;
 }
+
+.section {
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+.update-text {    
+    cursor: pointer;
+}
+.style-element {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #000000;
+    background-color: yellow;
+}
+.style-element.active {
+    border-color: #ff3300;
+    background-color: white;
+}
